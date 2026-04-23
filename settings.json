@@ -1,0 +1,24 @@
+{
+    
+    "USD_CAD" : {"pair": "GBP_JPY", "units": 10000, "short_ma":4, "long_ma": 16},
+    "GBP_JPY" : {"pair": "GBP_JPY", "units": 10000, "short_ma":4, "long_ma": 16},
+    "AUD_USD" : {"pair": "AUD_USD", "units": 10000, "short_ma":8, "long_ma": 32},
+    "GBP_USD" : {"pair": "GBP_USD", "units": 10000, "short_ma":8, "long_ma": 32},
+    "EUR_GBP" : {"pair": "EUR_GBP", "units": 10000, "short_ma":8, "long_ma": 32},
+    "EUR_CHF" : {"pair": "EUR_CHF", "units": 10000, "short_ma":8, "long_ma": 32},    
+    "USD_JPY" : {"pair": "USD_JPY", "units": 10000, "short_ma":4, "long_ma": 16},
+    "NZD_USD" : {"pair": "NZD_USD", "units": 10000, "short_ma":8, "long_ma": 32},
+    "EUR_SGD" : {"pair": "EUR_SGD", "units": 10000, "short_ma":8, "long_ma": 32}, 
+    "GBP_SGD" : {"pair": "GBP_SGD", "units": 10000, "short_ma":8, "long_ma": 32}, 
+    "USD_SGD" : {"pair": "USD_SGD", "units": 10000, "short_ma":8, "long_ma": 32}, 
+    "GBP_CHF" : {"pair": "GBP_CHF", "units": 10000, "short_ma":8, "long_ma": 32},
+    "EUR_JPY" : {"pair": "EUR_JPY", "units": 10000, "short_ma":8, "long_ma": 32},
+    "SGD_JPY" : {"pair": "SGD_JPY", "units": 10000, "short_ma":8, "long_ma": 32},  
+    "SGD_CHF" : {"pair": "SGD_CHF", "units": 10000, "short_ma":8, "long_ma": 32},    
+    "GBP_NZD" : {"pair": "GBP_NZD", "units": 10000, "short_ma":4, "long_ma": 16},
+    "NZD_CAD" : {"pair": "NZD_CAD", "units": 10000, "short_ma":8, "long_ma": 32},
+    "NZD_CHF" : {"pair": "NZD_CHF", "units": 10000, "short_ma":8, "long_ma": 32},
+    "NZD_JPY" : {"pair": "NZD_JPY", "units": 10000, "short_ma":8, "long_ma": 32},
+    "EUR_USD" : {"pair": "EUR_USD", "units": 10000, "short_ma":8, "long_ma": 32},
+    "EUR_CAD" : {"pair": "EUR_CAD", "units": 10000, "short_ma":8, "long_ma": 32}
+}
