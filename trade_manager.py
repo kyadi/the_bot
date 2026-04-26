@@ -3,6 +3,7 @@ from oanda_api import OandaAPI
 import json
 
 from pip_calc import PipCalc
+from oanda_trades import OandaTrades
 class TradeManager():
 
     def __init__(self, api, settings=None, log=None):
@@ -23,6 +24,9 @@ class TradeManager():
                 self.pair_state = {pair: {'multiplier': 1, 'last_outcome': None} for pair in self.settings.keys()}
         else:
             self.pair_state = {pair: {'multiplier': 1, 'last_outcome': None} for pair in self.settings.keys()}
+
+        # OandaTrades instance for trade result checking
+        self.trades_helper = OandaTrades(None, None)
 
     def save_pair_state(self):
         with open(self.state_file, 'w') as f:
@@ -49,20 +53,19 @@ class TradeManager():
         open_trades = self.api.open_trades()
         if open_trades is None:
             print('error occured, open trade list not fetched')
-            self.log.logger.debug('error occured, open trade list not fetched')
+            if self.log:
+                self.log.logger.debug('error occured, open trade list not fetched')
             msg = "Returned none while trying tho get  open trades "
             return msg
-            
-        pairs= pairs_to_close
-        open_pairs = [trade.instrument for trade in open_trades ]
-        
+        pairs = pairs_to_close
+        open_pairs = [trade.instrument for trade in open_trades]
         trade_ids_to_close = [trade.trade_id for trade in open_trades if trade.instrument in pairs]
-        #open_trade_ids=[trade.trade_id for trade in open_trades ]
-        
         self.log_message(f"TradeManager:place_trade()  pairs_to_close:{pairs_to_close}")
         self.log_message(f"TradeManager:place_trade()  open trade:{open_trades}")
         self.log_message(f"TradeManager:place_trade()  trade ids to close{trade_ids_to_close}")
 
+        # Track the last closed trade result for multiplier logic
+        last_result = None
         for id in trade_ids_to_close:
             ok, code = self.api.close_trade(id)
             if ok == False:
@@ -71,6 +74,12 @@ class TradeManager():
                 return msg
             else:
                 self.log_message(f"TradeManager:place_trade()  Successfuly closed trade with id :{id}.Status code : {code}")
+                # After closing, check the result of the most recent closed trade
+                # Use the takeProfit value for comparison
+                pair = pairs[0] if isinstance(pairs, (list, tuple)) else pairs
+                last_result = self.trades_helper.get_last_closed_trade_result(pair, take_profit=self.takeProfit)
+                if last_result and 'status' in last_result:
+                    self.update_lot_multiplier(pair, last_result['status'])
                 return True
 
 
@@ -81,7 +90,8 @@ class TradeManager():
         base_units = self.settings[pair].units
         multiplier = self.get_lot_multiplier(pair)
         units = base_units * multiplier * (1 if t['units'] > 0 else -1)
-        trade_id, dis, tp = self.api.placeTrade(pair, units, stop_loss=self.stoploss, trailing_stop_loss=self.trailingStoploss, take_profit=self.takeProfit)
+        trade_id, sl, tp = self.api.placeTrade(pair, units, stop_loss=self.stoploss, take_profit=self.takeProfit)
+        #trade_id, dis, tp = self.api.placeTrade(pair, units, stop_loss=self.stoploss, trailing_stop_loss=self.trailingStoploss, take_profit=self.takeProfit)
         if trade_id is not None:
             self.log_message(f"TradeManager:place_trade()   Opened trade {t['pair']} with id : {trade_id}")
             print(f" you have successfuly placed the trade, instrument: {pair}, units: {units}. trade id is: {trade_id} ")

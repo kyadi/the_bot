@@ -1,0 +1,75 @@
+2026-04-24 16:51:05 TradeManager:place_trade()  pairs_to_close:['EUR_USD']
+2026-04-24 16:51:05 TradeManager:place_trade()  open trade:[{'instrument': 'USD_CAD', 'trade_id': 10, 'price': 1.36678, 'Units': 10000, 'Profits': -3.2361}, {'instrument': 'USD_CAD', 'trade_id': 5, 'price': 1.36686, 'Units': 10000, 'Profits': -3.8244}]
+2026-04-24 16:51:05 TradeManager:place_trade()  trade ids to close[]
+2026-04-24 16:51:31 TradeManager:place_trade(){'pair': 'EUR_USD', 'units': 10000}
+2026-04-24 16:51:32 TradeManager:place_trade()  pairs_to_close:EUR_USD
+2026-04-24 16:51:32 TradeManager:place_trade()  open trade:[{'instrument': 'USD_CAD', 'trade_id': 10, 'price': 1.36678, 'Units': 10000, 'Profits': -3.3096}, {'instrument': 'USD_CAD', 'trade_id': 5, 'price': 1.36686, 'Units': 10000, 'Profits': -3.898}]
+2026-04-24 16:51:32 TradeManager:place_trade()  trade ids to close[]
+2026-04-24 16:51:32 TradeManager:place_trade(){'pair': 'EUR_USD', 'units': 10000}
+2026-04-24 16:51:35 TradeManager:place_trade()   Opened trade EUR_USD with id : 14
+2026-04-24 16:52:08 TradeManager:place_trade()  pairs_to_close:['EUR_USD']
+2026-04-24 16:52:08 TradeManager:place_trade()  open trade:[{'instrument': 'EUR_USD', 'trade_id': 14, 'price': 1.17232, 'Units': 20000, 'Profits': -3.4}, {'instrument': 'USD_CAD', 'trade_id': 10, 'price': 1.36678, 'Units': 10000, 'Profits': -3.236}, {'instrument': 'USD_CAD', 'trade_id': 5, 'price': 1.36686, 'Units': 10000, 'Profits': -3.8244}]
+2026-04-24 16:52:08 TradeManager:place_trade()  trade ids to close[14]
+2026-04-24 16:52:09 TradeManager:place_trade()  Successfuly closed trade with id :14.Status code : 200
+2026-04-24 16:53:03 TradeManager:place_trade()  pairs_to_close:['EUR_USD']
+2026-04-24 16:53:03 TradeManager:place_trade()  open trade:[{'instrument': 'USD_CAD', 'trade_id': 10, 'price': 1.36678, 'Units': 10000, 'Profits': -3.1625}, {'instrument': 'USD_CAD', 'trade_id': 5, 'price': 1.36686, 'Units': 10000, 'Profits': -3.7509}]
+2026-04-24 16:53:03 TradeManager:place_trade()  trade ids to close[]
+2026-04-24 16:53:04 TradeManager:place_trade(){'pair': 'EUR_USD', 'units': -10000}
+2026-04-24 16:53:05 TradeManager:place_trade()  pairs_to_close:EUR_USD
+2026-04-24 16:53:05 TradeManager:place_trade()  open trade:[{'instrument': 'USD_CAD', 'trade_id': 10, 'price': 1.36678, 'Units': 10000, 'Profits': -3.1625}, {'instrument': 'USD_CAD', 'trade_id': 5, 'price': 1.36686, 'Units': 10000, 'Profits': -3.7509}]
+2026-04-24 16:53:05 TradeManager:place_trade()  trade ids to close[]
+2026-04-24 16:53:05 TradeManager:place_trade(){'pair': 'EUR_USD', 'units': -10000}
+2026-04-24 16:53:09 TradeManager:place_trade()   Opened trade EUR_USD with id : 23
+2026-04-24 16:54:02 TradeManager:place_trade()  pairs_to_close:['EUR_USD']
+2026-04-24 16:54:02 TradeManager:place_trade()  open trade:[{'instrument': 'EUR_USD', 'trade_id': 23, 'price': 1.17207, 'Units': -10000, 'Profits': -2.5}, {'instrument': 'USD_CAD', 'trade_id': 10, 'price': 1.36678, 'Units': 10000, 'Profits': -2.7946}, {'instrument': 'USD_CAD', 'trade_id': 5, 'price': 1.36686, 'Units': 10000, 'Profits': -3.383}]
+2026-04-24 16:54:02 TradeManager:place_trade()  trade ids to close[23]
+2026-04-24 16:54:03 TradeManager:place_trade()  Successfuly closed trade with id :23.Status code : 200
+2026-04-24 16:54:18 TradeManager:place_trade(){'pair': 'EUR_USD', 'units': 10000}
+2026-04-24 16:54:19 TradeManager:place_trade()  pairs_to_close:EUR_USD
+2026-04-24 16:54:19 TradeManager:place_trade()  open trade:[{'instrument': 'USD_CAD', 'trade_id': 10, 'price': 1.36678, 'Units': 10000, 'Profits': -2.7946}, {'instrument': 'USD_CAD', 'trade_id': 5, 'price': 1.36686, 'Units': 10000, 'Profits': -3.383}]
+2026-04-24 16:54:19 TradeManager:place_trade()  trade ids to close[]
+2026-04-24 16:54:19 TradeManager:place_trade(){'pair': 'EUR_USD', 'units': 10000}
+2026-04-24 16:54:21 TradeManager:place_trade()   Opened trade EUR_USD with id : 32
+2026-04-24 16:55:08 TradeManager:place_trade()  pairs_to_close:['EUR_USD']
+2026-04-24 16:55:08 TradeManager:place_trade()  open trade:[{'instrument': 'EUR_USD', 'trade_id': 32, 'price': 1.17232, 'Units': 10000, 'Profits': -2.1}, {'instrument': 'USD_CAD', 'trade_id': 10, 'price': 1.36678, 'Units': 10000, 'Profits': -2.7947}, {'instrument': 'USD_CAD', 'trade_id': 5, 'price': 1.36686, 'Units': 10000, 'Profits': -3.383}]
+2026-04-24 16:55:08 TradeManager:place_trade()  trade ids to close[32]
+2026-04-24 16:55:10 TradeManager:place_trade()  Successfuly closed trade with id :32.Status code : 200
+2026-04-24 16:55:34 TradeManager:place_trade(){'pair': 'EUR_USD', 'units': 10000}
+2026-04-24 16:55:35 TradeManager:place_trade()  pairs_to_close:EUR_USD
+2026-04-24 16:55:35 TradeManager:place_trade()  open trade:[{'instrument': 'USD_CAD', 'trade_id': 10, 'price': 1.36678, 'Units': 10000, 'Profits': -3.236}, {'instrument': 'USD_CAD', 'trade_id': 5, 'price': 1.36686, 'Units': 10000, 'Profits': -3.8244}]
+2026-04-24 16:55:35 TradeManager:place_trade()  trade ids to close[]
+2026-04-24 16:55:35 TradeManager:place_trade(){'pair': 'EUR_USD', 'units': 10000}
+2026-04-24 16:55:41 TradeManager:place_trade()   Opened trade EUR_USD with id : 41
+2026-04-24 16:56:05 TradeManager:place_trade()  pairs_to_close:['EUR_USD']
+2026-04-24 16:56:05 TradeManager:place_trade()  open trade:[{'instrument': 'EUR_USD', 'trade_id': 41, 'price': 1.17234, 'Units': 10000, 'Profits': -2.2}, {'instrument': 'USD_CAD', 'trade_id': 10, 'price': 1.36678, 'Units': 10000, 'Profits': -1.9855}, {'instrument': 'USD_CAD', 'trade_id': 5, 'price': 1.36686, 'Units': 10000, 'Profits': -2.5738}]
+2026-04-24 16:56:05 TradeManager:place_trade()  trade ids to close[41]
+2026-04-24 16:56:06 TradeManager:place_trade()  Successfuly closed trade with id :41.Status code : 200
+2026-04-24 16:56:16 TradeManager:place_trade(){'pair': 'EUR_USD', 'units': 10000}
+2026-04-24 16:56:16 TradeManager:place_trade()  pairs_to_close:EUR_USD
+2026-04-24 16:56:16 TradeManager:place_trade()  open trade:[{'instrument': 'USD_CAD', 'trade_id': 10, 'price': 1.36678, 'Units': 10000, 'Profits': -2.8682}, {'instrument': 'USD_CAD', 'trade_id': 5, 'price': 1.36686, 'Units': 10000, 'Profits': -3.4565}]
+2026-04-24 16:56:16 TradeManager:place_trade()  trade ids to close[]
+2026-04-24 16:56:16 TradeManager:place_trade(){'pair': 'EUR_USD', 'units': 10000}
+2026-04-24 16:56:19 TradeManager:place_trade()   Opened trade EUR_USD with id : 48
+2026-04-24 16:57:03 TradeManager:place_trade()  pairs_to_close:['EUR_USD']
+2026-04-24 16:57:03 TradeManager:place_trade()  open trade:[{'instrument': 'EUR_USD', 'trade_id': 48, 'price': 1.17241, 'Units': 20000, 'Profits': -4.4}, {'instrument': 'USD_CAD', 'trade_id': 10, 'price': 1.36678, 'Units': 10000, 'Profits': -2.8679}, {'instrument': 'USD_CAD', 'trade_id': 5, 'price': 1.36686, 'Units': 10000, 'Profits': -3.4561}]
+2026-04-24 16:57:03 TradeManager:place_trade()  trade ids to close[48]
+2026-04-24 16:57:03 TradeManager:place_trade()  Successfuly closed trade with id :48.Status code : 200
+2026-04-24 16:57:29 TradeManager:place_trade(){'pair': 'EUR_USD', 'units': -10000}
+2026-04-24 16:57:30 TradeManager:place_trade()  pairs_to_close:EUR_USD
+2026-04-24 16:57:30 TradeManager:place_trade()  open trade:[{'instrument': 'USD_CAD', 'trade_id': 10, 'price': 1.36678, 'Units': 10000, 'Profits': -3.3092}, {'instrument': 'USD_CAD', 'trade_id': 5, 'price': 1.36686, 'Units': 10000, 'Profits': -3.8974}]
+2026-04-24 16:57:30 TradeManager:place_trade()  trade ids to close[]
+2026-04-24 16:57:30 TradeManager:place_trade(){'pair': 'EUR_USD', 'units': -10000}
+2026-04-24 16:57:33 TradeManager:place_trade()   Opened trade EUR_USD with id : 57
+2026-04-24 16:58:04 TradeManager:place_trade()  pairs_to_close:['EUR_USD']
+2026-04-24 16:58:04 TradeManager:place_trade()  open trade:[{'instrument': 'EUR_USD', 'trade_id': 57, 'price': 1.17206, 'Units': -10000, 'Profits': -0.8}, {'instrument': 'USD_CAD', 'trade_id': 10, 'price': 1.36678, 'Units': 10000, 'Profits': -1.4705}, {'instrument': 'USD_CAD', 'trade_id': 5, 'price': 1.36686, 'Units': 10000, 'Profits': -2.0587}]
+2026-04-24 16:58:04 TradeManager:place_trade()  trade ids to close[57]
+2026-04-24 16:58:04 TradeManager:place_trade()  Successfuly closed trade with id :57.Status code : 200
+2026-04-24 16:58:05 TradeManager:place_trade(){'pair': 'EUR_USD', 'units': -10000}
+2026-04-24 16:58:05 TradeManager:place_trade()  pairs_to_close:EUR_USD
+2026-04-24 16:58:05 TradeManager:place_trade()  open trade:[{'instrument': 'USD_CAD', 'trade_id': 10, 'price': 1.36678, 'Units': 10000, 'Profits': -1.4705}, {'instrument': 'USD_CAD', 'trade_id': 5, 'price': 1.36686, 'Units': 10000, 'Profits': -2.0587}]
+2026-04-24 16:58:05 TradeManager:place_trade()  trade ids to close[]
+2026-04-24 16:58:05 TradeManager:place_trade(){'pair': 'EUR_USD', 'units': -10000}
+2026-04-24 16:58:08 TradeManager:place_trade()   Opened trade EUR_USD with id : 64
+2026-04-24 16:59:04 TradeManager:place_trade()  pairs_to_close:['EUR_USD']
+2026-04-24 16:59:04 TradeManager:place_trade()  open trade:[{'instrument': 'USD_CAD', 'trade_id': 10, 'price': 1.36678, 'Units': 10000, 'Profits': -1.9115}, {'instrument': 'USD_CAD', 'trade_id': 5, 'price': 1.36686, 'Units': 10000, 'Profits': -2.4997}]
+2026-04-24 16:59:04 TradeManager:place_trade()  trade ids to close[]

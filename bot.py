@@ -9,7 +9,7 @@ from technicals import Technicals
 from defs import SELL, BUY, NONE
 from trade_manager import TradeManager
 #from index_cal import IndexCalc
-GRANULARITY ="H1"
+GRANULARITY ="M1"
 SLEEP = 3.0
 
 

@@ -76,7 +76,7 @@ class Technicals():
 
         #short signal detection
         if current_price - prev_l< 0:
-            if dy_mean < -signal:
+            #if dy_mean < -signal:
                 #if indexSignal ==-1:
                     if self.prev_current is not None:
                         if self.prev_current - prev_l<0:
@@ -86,7 +86,7 @@ class Technicals():
                         decision = -1
         #long signal detection
         elif current_price - prev_h>0:
-            if dy_mean > signal:
+            #if dy_mean > signal:
                 #if indexSignal == 1:
                     if self.prev_current is not None:
                         if self.prev_current - prev_h>0:

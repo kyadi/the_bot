@@ -40,6 +40,9 @@ class OandaAPI():
                 json_response = response.json()
                 return status_code, json_response
             else:
+                 # ADD THIS — prints the actual error message from OANDA
+                #print(f"HTTP {status_code} | URL: {url}")
+                #print(f"Response body: {response.text}")
                 return status_code, None   
 
         except:
@@ -273,7 +276,7 @@ class OandaAPI():
         ok = 201
         if status_code != ok:
             print("An error occured while placing the trade. Error code: ", status_code)
-            return None
+            return None, None, None
         print(json_data)
 
         #getting the tradeID from the order
